@@ -1,2 +1,6 @@
 /node_modules
 .env
+*.mp3
+*.webm
+*.tmp*
+cookies.txt

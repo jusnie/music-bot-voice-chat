@@ -1,0 +1,8 @@
+services:
+  music-bot:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    # Uncomment if you use YouTube cookies:
+    # volumes:
+    #   - ./cookies.txt:/app/cookies.txt:ro

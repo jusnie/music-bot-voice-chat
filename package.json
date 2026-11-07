@@ -1,22 +1,28 @@
 {
   "name": "music-bot-voice-chat",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Telegram music bot that streams YouTube audio into group voice chats",
   "license": "ISC",
   "author": "",
   "type": "commonjs",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "session": "node generate_session.js"
   },
   "dependencies": {
     "axios": "^1.11.0",
     "dotenv": "^17.2.1",
     "input": "^1.0.1",
     "node-telegram-bot-api": "^0.66.0",
-    "nodemon": "^3.1.10",
     "telegram": "^2.26.22",
-    "tgcalls-gramjs": "^1.1.0",
-    "yt-dlp-exec": "^1.0.2"
+    "tgcalls-gramjs": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
