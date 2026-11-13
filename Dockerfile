@@ -2,7 +2,7 @@ FROM node:20-bookworm-slim
 
 # ffmpeg converts audio, yt-dlp downloads from YouTube, python3 runs yt-dlp
 RUN apt-get update \
- && apt-get install -y --no-install-recommends ffmpeg python3 ca-certificates curl \
+ && apt-get install -y --no-install-recommends ffmpeg python3 ca-certificates curl build-essential \
  && curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp \
  && chmod a+rx /usr/local/bin/yt-dlp \
  && apt-get purge -y curl && apt-get autoremove -y \
